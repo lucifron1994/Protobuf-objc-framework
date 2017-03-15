@@ -13,11 +13,11 @@
 		3EFCF7CB1E78F9370068F7BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EFCF7C91E78F9370068F7BC /* Main.storyboard */; };
 		3EFCF7CD1E78F9370068F7BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EFCF7CC1E78F9370068F7BC /* Assets.xcassets */; };
 		3EFCF7D01E78F9370068F7BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EFCF7CE1E78F9370068F7BC /* LaunchScreen.storyboard */; };
-		3EFCF7D81E78FB4A0068F7BC /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFCF7D71E78FB4A0068F7BC /* Protobuf.framework */; };
-		3EFCF7E21E78FB610068F7BC /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFCF7DC1E78FB610068F7BC /* Person.pbobjc.m */; };
-		3EFCF7E31E78FB610068F7BC /* Student.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFCF7DE1E78FB610068F7BC /* Student.pbobjc.m */; };
+		3EFCF7E21E78FB610068F7BC /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFCF7DC1E78FB610068F7BC /* Person.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3EFCF7E31E78FB610068F7BC /* Student.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFCF7DE1E78FB610068F7BC /* Student.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3EFCF7E41E78FB610068F7BC /* person.proto in Resources */ = {isa = PBXBuildFile; fileRef = 3EFCF7E01E78FB610068F7BC /* person.proto */; };
 		3EFCF7E51E78FB610068F7BC /* Student.proto in Resources */ = {isa = PBXBuildFile; fileRef = 3EFCF7E11E78FB610068F7BC /* Student.proto */; };
+		3EFCF7EB1E7916DA0068F7BC /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EFCF7EA1E7916DA0068F7BC /* Protobuf.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,13 +31,13 @@
 		3EFCF7CC1E78F9370068F7BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EFCF7CF1E78F9370068F7BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EFCF7D11E78F9370068F7BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3EFCF7D71E78FB4A0068F7BC /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Protobuf.framework; sourceTree = "<group>"; };
 		3EFCF7DB1E78FB610068F7BC /* Person.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.pbobjc.h; sourceTree = "<group>"; };
 		3EFCF7DC1E78FB610068F7BC /* Person.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.pbobjc.m; sourceTree = "<group>"; };
 		3EFCF7DD1E78FB610068F7BC /* Student.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.pbobjc.h; sourceTree = "<group>"; };
 		3EFCF7DE1E78FB610068F7BC /* Student.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.pbobjc.m; sourceTree = "<group>"; };
 		3EFCF7E01E78FB610068F7BC /* person.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = person.proto; sourceTree = "<group>"; };
 		3EFCF7E11E78FB610068F7BC /* Student.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Student.proto; sourceTree = "<group>"; };
+		3EFCF7EA1E7916DA0068F7BC /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Protobuf.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EFCF7D81E78FB4A0068F7BC /* Protobuf.framework in Frameworks */,
+				3EFCF7EB1E7916DA0068F7BC /* Protobuf.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				3EFCF7BF1E78F9370068F7BC /* ProtobufTestDemo */,
-				3EFCF7D71E78FB4A0068F7BC /* Protobuf.framework */,
 				3EFCF7BE1E78F9370068F7BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +80,7 @@
 				3EFCF7CC1E78F9370068F7BC /* Assets.xcassets */,
 				3EFCF7CE1E78F9370068F7BC /* LaunchScreen.storyboard */,
 				3EFCF7D11E78F9370068F7BC /* Info.plist */,
+				3EFCF7EA1E7916DA0068F7BC /* Protobuf.framework */,
 				3EFCF7C01E78F9370068F7BC /* Supporting Files */,
 			);
 			path = ProtobufTestDemo;
@@ -327,6 +327,7 @@
 					"$(inherited)",
 					"GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1",
 				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = ProtobufTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wanghong.ProtobufTestDemo;
@@ -343,6 +344,7 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = ProtobufTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wanghong.ProtobufTestDemo;
